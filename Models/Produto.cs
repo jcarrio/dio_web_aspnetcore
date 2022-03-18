@@ -13,6 +13,7 @@ namespace Cursomvc.Models
         public string Descricao { get; set; }
         [Range(1,10,ErrorMessage = "Valor fora da faixa")]
         public int Quantidade { get; set; }
+        [Display(Name = "Categoria")]
         public int CategoriaId { get; set; }
         public Categoria Categoria { get; set; }
     }
